@@ -85,7 +85,7 @@ public class CEducacion {
         
         sEducacion.delete(id);
         
-        return new ResponseEntity(new Mensaje("Exducación Eliminada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Educación Eliminada"), HttpStatus.OK);
     }
     
     
