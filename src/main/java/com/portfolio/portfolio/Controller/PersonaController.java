@@ -43,7 +43,7 @@ public class PersonaController {
         Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg());
         personaService.save(persona);
         
-        return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Persona agregada"), HttpStatus.OK);
     }
     @PutMapping("/update/{id}")
     @PreAuthorize("hasRole('ADMIN')")
