@@ -8,15 +8,15 @@ public class dtohys {
    @NotBlank
    private int porcentaje; 
    @NotBlank
-   private String img; 
+   private String color;
 
     public dtohys() {
     }
 
-    public dtohys(String nombre, int porcentaje, String img) {
+    public dtohys(String nombre, int porcentaje, String color) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
-        this.img = img;
+        this.color = color;
     }
 
     public String getNombre() {
@@ -35,12 +35,13 @@ public class dtohys {
         this.porcentaje = porcentaje;
     }
 
-    public String getImg() {
-        return img;
+
+    public String getColor() {
+        return color;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setColor(String color) {
+        this.color = color;
     }
    
    
