@@ -17,7 +17,7 @@ public class Proyectos {
    private String nombre;
    private String descripcion;
    private String img;
-
+   
     public Proyectos() {
     }
 

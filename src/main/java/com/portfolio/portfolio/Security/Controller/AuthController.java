@@ -10,6 +10,8 @@ import com.portfolio.portfolio.Security.Service.RolService;
 import com.portfolio.portfolio.Security.Service.UsuarioService;
 import com.portfolio.portfolio.Security.jwt.JwtProvider;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,8 +33,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-//@CrossOrigin(origins = "http://localhost:4200/")
-@CrossOrigin(origins = "https://portfolio-ef698.web.app/")
+@CrossOrigin(origins = "http://localhost:4200/")
+//@CrossOrigin(origins = "https://portfolio-ef698.web.app/")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder; 

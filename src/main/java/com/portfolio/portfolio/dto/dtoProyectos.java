@@ -18,7 +18,7 @@ public class dtoProyectos {
         this.descripcion = descripcion;
         this.img = img;
     }
-
+    
     public String getNombre() {
         return nombre;
     }
